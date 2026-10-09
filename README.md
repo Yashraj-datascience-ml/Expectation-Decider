@@ -1,35 +1,54 @@
 # 📊 Expectation-Decider
-### Probability & Statistical Analysis Using Python
+### Probability, Statistical Analysis & Data Visualization Using Python
 
-A data-driven statistical analysis project that explores probability distributions, conditional probability, student study habits, attendance patterns, and expected exam outcomes using Python.
-
-The project combines statistical concepts with data visualization to make probability analysis easier to understand and interpret.
+An exploratory data analysis project that applies probability theory and statistical methods to understand student study habits, attendance patterns, and examination performance through Python-based calculations and visualizations.
 
 ---
 
-## 📌 Project Overview
+## 📌 Table of Contents
 
-**Expectation-Decider** demonstrates how probability and statistical methods can be applied to student performance analysis. It explores relationships between study hours, attendance, and examination results while using binomial probability to calculate possible student passing outcomes.
+- [Project Overview](#-project-overview)
+- [Objectives](#-project-objectives)
+- [Technologies Used](#-technologies-used)
+- [Project Structure](#-project-structure)
+- [Dataset Description](#-dataset-description)
+- [Statistical Analysis](#-statistical-analysis)
+- [Project Outputs](#-project-outputs)
+- [Key Results](#-key-results)
+- [Installation and Usage](#-installation-and-usage)
+- [Future Enhancements](#-future-enhancements)
+- [Author](#-author)
+- [License](#-license)
 
-The project includes statistical calculations, dataset analysis, and visual representations of key findings.
+---
+
+## 📖 Project Overview
+
+**Expectation-Decider** explores how probability and statistical analysis can be applied to student-related data. The project combines data processing, probability calculations, and graphical representations to make statistical concepts easier to understand.
+
+Using Python and Jupyter Notebook, the project investigates study hours, attendance thresholds, examination outcomes, and binomial probability distributions.
+
+The repository includes the analysis notebook, dataset, and generated visualizations.
 
 ## 🎯 Project Objectives
 
-- Analyze student study hours and examination performance.
-- Explore the relationship between attendance and study habits.
+- Analyze study hours in relation to examination results.
+- Explore the relationship between study habits and attendance.
 - Understand binomial probability distributions.
 - Calculate expected values, variance, and standard deviation.
-- Apply conditional probability concepts.
-- Present statistical findings through clear visualizations.
+- Demonstrate set theory using a Venn diagram.
+- Present statistical results through clear, informative charts.
 
-## 🛠️ Technologies & Libraries
+## 🛠️ Technologies Used
 
-- **Python** — Core programming language
-- **Jupyter Notebook** — Interactive analysis and documentation
-- **Pandas** — Data manipulation and analysis
-- **NumPy** — Numerical computations
-- **Matplotlib** — Statistical charts and graphs
-- **Seaborn** — Statistical data visualization, if used in the notebook
+| Technology | Purpose |
+|---|---|
+| Python | Statistical calculations and analysis |
+| Jupyter Notebook | Interactive code and analysis |
+| Pandas | Data handling and manipulation |
+| NumPy | Numerical computations |
+| Matplotlib | Graphs and visualizations |
+| Seaborn | Statistical visualization, if used |
 
 ## 📂 Project Structure
 
@@ -38,118 +57,191 @@ Expectation-Decider/
 │
 ├── Expectation_Decider.ipynb
 ├── expectation_decider_dataset.csv
-├── binomial_probability_curve.png
-├── binomial_probability_distribution.png
-├── expected_students_passing.png
+│
 ├── study_hours_vs_exam_performance.png
+├── binomial_probability_distribution.png
+├── binomial_probability_curve.png
+├── expected_students_passing.png
 ├── venn_diagram_study_attendance.png
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
 ```
 
-## 📈 Key Analysis & Visualizations
+## 📁 Dataset Description
+
+**Dataset file:** `expectation_decider_dataset.csv`
+
+The dataset supports the project's student-performance and probability analysis.
+
+The analysis explores topics such as:
+
+- Study hours and examination outcomes
+- Attendance thresholds
+- Student passing probabilities
+- Statistical relationships within the dataset
+
+Refer to the Jupyter Notebook for the actual dataset columns, preprocessing steps, calculations, and analytical implementation.
+
+---
+
+## 🧮 Statistical Analysis
+
+The project demonstrates the following concepts:
+
+**1. Probability and Conditional Probability**
+
+Explores probabilities associated with events and their relationships.
+
+**2. Binomial Distribution**
+
+Models the probability of obtaining a particular number of successful outcomes across a fixed number of trials, subject to the model's assumptions.
+
+**3. Expected Value**
+
+Calculates the theoretical average outcome of a probability distribution.
+
+**4. Variance and Standard Deviation**
+
+Measures the spread and variability of probability outcomes.
+
+**5. Set Theory and Venn Diagrams**
+
+Illustrates the intersection and differences between study-hour and attendance groups.
+
+**6. Exploratory Data Analysis**
+
+Examines patterns in student study habits and examination performance through descriptive statistics and visualizations.
+
+---
+
+## 📸 Project Outputs & Visualizations
+
+The following outputs provide a visual overview of the statistical analysis performed in the project.
 
 ### 1. Study Hours vs Exam Performance
 
-Compares average study hours between students who passed and students who failed, helping explore the relationship between study habits and exam outcomes.
+Compares the average study hours of students who passed and those who failed.
+
+![Study Hours vs Exam Performance](study_hours_vs_exam_performance.png)
+
+*Insight:* In the analyzed dataset, students who passed had a higher average number of study hours than students who failed. This shows an association in the dataset, not proof that study hours alone determine examination results.
 
 ### 2. Binomial Probability Distribution
 
-Visualizes the probability of different numbers of students passing under a binomial probability model.
+Shows the probabilities associated with different possible numbers of students passing under the specified binomial model.
+
+![Binomial Probability Distribution](binomial_probability_distribution.png)
+
+*Purpose:* Helps visualize the likelihood of different successful-outcome counts.
 
 ### 3. Binomial Probability Curve
 
-Displays how the probability changes for different possible numbers of successful outcomes.
+Displays how the probability varies across possible numbers of passing outcomes.
+
+![Binomial Probability Curve](binomial_probability_curve.png)
+
+*Purpose:* Provides a complementary view of the binomial probability distribution.
 
 ### 4. Expected Number of Students Passing
 
-Illustrates the expected number of successful outcomes alongside the corresponding probability distribution.
+Combines the probability distribution with a visual representation of the expected passing count.
 
-### 5. Venn Diagram: Study Hours & Attendance
+![Expected Students Passing](expected_students_passing.png)
 
-Shows the overlap between students studying more than 10 hours and students having attendance above 80%.
+*Purpose:* Demonstrates expected value and the interpretation of probabilities in a binomial model.
 
-## 📊 Statistical Concepts Covered
+### 5. Study Hours and Attendance — Venn Diagram
 
-- Probability and conditional probability
-- Binomial distribution
-- Expected value (mathematical expectation)
-- Variance and standard deviation
-- Set theory and Venn diagrams
-- Exploratory data analysis
-- Data visualization and interpretation
+Shows the relationship between two groups:
 
-## 🚀 Getting Started
+- **Set A:** Students studying more than 10 hours.
+- **Set B:** Students with attendance above 80%.
+
+![Study Hours and Attendance Venn Diagram](venn_diagram_study_attendance.png)
+
+*Purpose:* Illustrates the intersection, individual groups, and students who meet neither condition.
+
+---
+
+## 📊 Key Results
+
+The project generates the following types of analytical results:
+
+- Average study hours compared by examination outcome.
+- Probability distribution for possible passing counts.
+- Expected value, variance, and standard deviation.
+- Group overlap based on study hours and attendance.
+- Visual summaries of probability and statistical patterns.
+
+The numerical results depend on the dataset and the model parameters used in the notebook. Refer to the executed notebook cells for the corresponding values.
+
+## 🚀 Installation and Usage
 
 ### Prerequisites
 
-Install Python and Jupyter Notebook, or use Anaconda if it is already installed.
+- Python 3.x
+- Jupyter Notebook
+- Required Python libraries
 
-### Installation
-
-**1. Clone the repository**
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/Yashraj-datascience-ml/Expectation-Decider.git
 ```
 
-**2. Navigate to the project directory**
+### Step 2: Navigate to the Project Directory
 
 ```bash
 cd Expectation-Decider
 ```
 
-**3. Install the required libraries**
+### Step 3: Install Dependencies
 
 ```bash
 pip install pandas numpy matplotlib seaborn jupyter
 ```
 
-**4. Launch Jupyter Notebook**
+Install Seaborn only if it is used by the notebook.
+
+### Step 4: Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-**5. Open the notebook**
+### Step 5: Run the Analysis
 
-Open `Expectation_Decider.ipynb` and run the cells in sequence.
+Open `Expectation_Decider.ipynb` and execute the cells in sequence.
 
-## 📁 Dataset
+Ensure the CSV dataset is available at the path expected by the notebook.
 
-The project includes `expectation_decider_dataset.csv`, which is used for the statistical analysis.
-
-The dataset supports the exploration of study hours, attendance, and examination performance. Refer to the notebook for the actual columns, data preparation steps, and analytical methods used.
-
-## 📌 Key Findings
-
-The project generates statistical summaries and visualizations to explore student performance patterns.
-
-The analysis includes comparisons of study hours, attendance-related set relationships, and binomial probabilities for different numbers of successful outcomes.
-
-The results should be interpreted within the assumptions of the dataset and the statistical models used.
+---
 
 ## 🔮 Future Enhancements
 
-- Add an interactive dashboard using Streamlit.
-- Include more detailed conditional probability examples.
-- Add interactive filters for student performance analysis.
-- Compare additional statistical distributions.
-- Improve automated statistical reporting.
+- Develop an interactive dashboard using Streamlit.
+- Add more detailed conditional probability examples.
+- Introduce interactive data filters.
+- Compare additional probability distributions.
+- Generate automated statistical reports.
+- Expand the analysis with additional relevant data.
 
 ## 👨‍💻 Author
 
 **Yashraj-datascience-ml**
 
-GitHub: [View My GitHub Profile](https://github.com/Yashraj-datascience-ml)
+GitHub Profile: [github.com/Yashraj-datascience-ml](https://github.com/Yashraj-datascience-ml)
+
+Project Repository: [Expectation-Decider](https://github.com/Yashraj-datascience-ml/Expectation-Decider)
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-⭐ If you find this project useful, consider starring the repository!
+*This project is intended for educational purposes and demonstrates the application of probability, statistical analysis, and data visualization using Python.*
 
-**Note:** This project is intended for educational purposes and demonstrates the application of probability and statistical analysis using Python.
+⭐ If you find this project interesting, consider starring the repository!
